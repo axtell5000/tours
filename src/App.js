@@ -22,6 +22,7 @@ function App() {
     }   
   };
 
+  // running the fetchTours just once
   useEffect(() => { fetchTours()}, []);
 
   if (loading) {
@@ -35,7 +36,7 @@ function App() {
   // default
   return (
     <main>
-      <Tours />
+      <Tours tours={tours} />
     </main>
   );
 }
