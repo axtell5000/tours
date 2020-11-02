@@ -53,65 +53,80 @@ Global Styles
 *,
 ::after,
 ::before {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;  
 }
+
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   background: var(--clr-grey-10);
   color: var(--clr-grey-1);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   line-height: 1.5;
   font-size: 0.875rem;
 }
+
 ul {
   list-style-type: none;
 }
+
 a {
   text-decoration: none;
 }
+
 h1,
 h2,
 h3,
 h4 {
-  letter-spacing: var(--spacing);
-  text-transform: capitalize;
+  letter-spacing: var(--spacing);  
   line-height: 1.25;
   margin-bottom: 0.75rem;
+  text-transform: capitalize;
 }
+
 h1 {
   font-size: 3rem;
 }
+
 h2 {
   font-size: 2rem;
 }
+
 h3 {
   font-size: 1.25rem;
 }
+
 h4 {
   font-size: 0.875rem;
 }
+
 p {
-  margin-bottom: 1.25rem;
   color: var(--clr-grey-5);
+  margin-bottom: 1.25rem;  
 }
+
 @media screen and (min-width: 800px) {
   h1 {
     font-size: 4rem;
   }
+
   h2 {
     font-size: 2.5rem;
   }
+
   h3 {
     font-size: 1.75rem;
   }
+
   h4 {
     font-size: 1rem;
   }
+
   body {
     font-size: 1rem;
   }
+
   h1,
   h2,
   h3,
@@ -122,10 +137,10 @@ p {
 /*  global classes */
 
 /* section */
-.section {
-  width: 90vw;
+.section {  
   margin: 0 auto;
   max-width: var(--max-width);
+  width: 90vw;
 }
 
 @media screen and (min-width: 992px) {
@@ -133,96 +148,108 @@ p {
     width: 95vw;
   }
 }
+
 .btn {
   background: var(--clr-primary-5);
-  display: inline-block;
-  padding: 0.25rem 0.5rem;
-  border-radius: var(--radius);
-  text-transform: capitalize;
-  color: var(--clr-white);
-  letter-spacing: var(--spacing);
   border-color: transparent;
+  border-radius: var(--radius);
+  color: var(--clr-white);
   cursor: pointer;
-  margin-top: 2rem;
+  display: inline-block;
   font-size: 1.2rem;
+  letter-spacing: var(--spacing);
+  margin-top: 2rem;
+  padding: 0.25rem 0.5rem;  
+  text-transform: capitalize;  
 }
 /*
 =============== 
 Tours
 ===============
 */
-main {
-  width: 90vw;
+main {  
   max-width: var(--fixed-width);
   margin: 5rem auto;
+  width: 90vw;
 }
+
 .loading {
   text-align: center;
 }
+
 .title {
-  text-align: center;
   margin-bottom: 4rem;
+  text-align: center;  
 }
-.underline {
-  width: 6rem;
-  height: 0.25rem;
+
+.underline {  
   background: var(--clr-primary-5);
+  height: 0.25rem;  
   margin-left: auto;
   margin-right: auto;
+  width: 6rem;
 }
 
 .single-tour {
   background: var(--clr-white);
   border-radius: var(--radius);
-  margin: 2rem 0;
   box-shadow: var(--light-shadow);
+  margin: 2rem 0;  
   transition: var(--transition);
 }
+
 .single-tour:hover {
   box-shadow: var(--dark-shadow);
 }
+
 .single-tour img {
-  width: 100%;
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);  
   height: 20rem;
   object-fit: cover;
-  border-top-right-radius: var(--radius);
-  border-top-left-radius: var(--radius);
+  width: 100%;
 }
+
 .tour-info {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
+  display: flex;
+  justify-content: space-between;  
   margin-bottom: 1.5rem;
 }
+
 .tour-info h4 {
   margin-bottom: 0;
 }
+
 .single-tour button {
   background: transparent;
   border-color: transparent;
-  text-transform: capitalize;
   color: var(--clr-primary-5);
-  font-size: 1rem;
   cursor: pointer;
+  font-size: 1rem;
   padding-left: 0.25rem;
+  text-transform: capitalize;
 }
+
 .tour-price {
-  color: var(--clr-primary-5);
   background: var(--clr-primary-10);
-  padding: 0.25rem 0.5rem;
   border-radius: var(--radius);
+  color: var(--clr-primary-5);  
+  padding: 0.25rem 0.5rem; 
 }
+
 .single-tour footer {
   padding: 1.5rem 2rem;
 }
+
 .single-tour .delete-btn {
-  display: block;
-  width: 200px;
-  margin: 1rem auto 0 auto;
-  color: var(--clr-red-dark);
-  letter-spacing: var(--spacing);
   background: transparent;
   border: 1px solid var(--clr-red-dark);
-  padding: 0.25rem 0.5rem;
   border-radius: var(--radius);
+  color: var(--clr-red-dark);
+  display: block;  
+  letter-spacing: var(--spacing);
+  margin: 1rem auto 0 auto;
+  padding: 0.25rem 0.5rem;
+  width: 200px;
 }
